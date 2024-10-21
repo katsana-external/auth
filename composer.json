@@ -1,52 +1,66 @@
 {
-    "name": "orchestra/auth",
-    "description": "Auth Component for Orchestra Platform",
-    "homepage": "http://orchestraplatform.com/docs/latest/components/auth/",
-    "keywords": ["orchestra-platform", "orchestral", "laravel", "auth", "acl", "rbac", "permission"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mior Muhammad Zaki",
-            "email": "crynobone@gmail.com",
-            "homepage": "https://github.com/crynobone"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Orchestra\\Auth\\" : "src/Auth/",
-            "Orchestra\\Authorization\\" : "src/Authorization/"
-        },
-        "classmap": [
-            "database/migrations"
-        ]
+  "name": "orchestra/auth",
+  "description": "Auth Component for Orchestra Platform",
+  "homepage": "http://orchestraplatform.com/docs/latest/components/auth/",
+  "keywords": [
+    "orchestra-platform",
+    "orchestral",
+    "laravel",
+    "auth",
+    "acl",
+    "rbac",
+    "permission"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mior Muhammad Zaki",
+      "email": "crynobone@gmail.com",
+      "homepage": "https://github.com/crynobone"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Orchestra\\Auth\\": "src/Auth/",
+      "Orchestra\\Authorization\\": "src/Authorization/"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Orchestra\\Auth\\Tests\\" : "tests/Auth/",
-            "Orchestra\\Authorization\\Tests\\" : "tests/Authorization/"
-        }
-    },
-    "require": {
-        "php": "^7.3 || ^8.0",
-        "illuminate/auth": "^8.37",
-        "orchestra/contracts": "^6.0",
-        "orchestra/memory": "^6.0",
-        "orchestra/support-core": "^6.0"
-    },
-    "require-dev": {
-        "orchestra/model": "^6.0",
-        "orchestra/testbench": "^6.17"
-    },
-    "replace": {
-        "orchestra/authorization": "self.version"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "6.0-dev"
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev"
+    "classmap": [
+      "database/migrations"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Orchestra\\Auth\\Tests\\": "tests/Auth/",
+      "Orchestra\\Authorization\\Tests\\": "tests/Authorization/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/auth": "^9.0",
+    "orchestra/contracts": "^7.0",
+    "orchestra/memory": "^7.0",
+    "orchestra/support-core": "^7.0"
+  },
+  "require-dev": {
+    "orchestra/model": "7.x-dev",
+    "orchestra/testbench": "^7.0"
+  },
+  "replace": {
+    "orchestra/authorization": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "7.0-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/model"
+    }
+  ]
 }
