@@ -21,6 +21,7 @@ Laravel    | Auth
  6.x       | 4.x
  7.x       | 5.x
  8.x       | 6.x
+ 10.x      | 7.x
 
 ## Installation
 
